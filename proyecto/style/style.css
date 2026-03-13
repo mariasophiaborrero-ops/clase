@@ -1,0 +1,203 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #ffffff;
+      font-family: 'Cormorant Garamond', serif;
+    }
+    /* encabezado */
+
+    header {
+      background-color: #ffffff;
+      padding: 48px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 48px;
+    }
+
+    nav a {
+      font-family: 'Futura', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 1rem;
+      font-weight: 500;
+      color: #000000;
+      text-decoration: none;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      position: relative;
+      padding-bottom: 2px;
+    }
+
+    /* banner*/
+    .banner-wrapper {
+      position: relative;
+      width: 100vw;
+    }
+ 
+    .banner {
+      position: relative;
+      width: 100%;
+      height: 75vh;
+      clip-path: url(#bannerClip);
+      overflow: hidden;
+    }
+ 
+    .banner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+ 
+    .banner .placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+    
+    .banner-border {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 75vh;
+    }
+
+    .banner-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: auto;
+    z-index: 10;
+
+
+  }
+    /*PRIMER TEXTO*/
+
+    .ptexto {
+      max-width: 1000px;
+      width: 100%;
+      text-align: center;
+      padding: 50px 10px;
+      margin: auto;
+    }
+
+    h1 {
+      font-family: 'proxima-nova', sans-serif;
+      font-size: 50px;
+      font-weight: 100;
+      color: #000000;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-family: 'proxima-nova', sans-serif;
+      font-size: 23px;
+      font-style: normal;
+      letter-spacing: 0.01rem;
+      color: #000000;
+      margin-bottom:0.5rem;
+
+    }
+
+    /* primera seccion (trailers)*/
+  
+    .trailers {
+      background-color: #F6F6F4;
+      padding: 150px;
+      width: 100%;
+    }
+    
+    .trailers__title {
+      font-family: 'proxima-nova', sans-serif;
+      font-size: 3rem;
+      font-weight: 300;
+      margin-bottom: 20px;
+      color: #000000;
+    }
+    
+    .trailers__grid {
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+    }
+    
+    .trailer-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 1;
+    }
+    
+    .trailer-card__thumb {
+      width: 100%;
+      aspect-ratio: 11 / 7;
+      overflow: hidden;
+    }
+    
+    .trailer-card__thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    
+    .trailer-card__label {
+      font-family: 'proxima-nova', sans-serif;
+      margin-top: 30px;
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: #000000;
+      text-align: center;
+    }
+
+    /* segunda seccion (characters)*/
+
+    .characters-banner {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
+    
+    .characters-banner__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 20%;
+      display: block;
+    }
+    
+    .characters-banner__overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 120px;
+
+    }
+    
+    .characters-banner__title {
+      font-family: 'proxima-nova', sans-serif;
+      font-size: 3.8rem;
+      font-weight: 700;
+      color: #ffffff;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    
